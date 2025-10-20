@@ -41,13 +41,19 @@ export default function ConvoyDetails() {
                 <span>https://steamcommunity.com/sharedfiles/filedetails/?id=3577280676</span>
             </a>
 
-            <p style={{ marginTop: 16 }}>Next, download the Megapack:</p>
+            <p style={{ marginTop: 16 }}>Next, download the Edison BDE:</p>
+            <a href='https://serve.realsgii2.dev/u/Edison_BDE.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+                <span>Edison BDE</span>
+                <span>https://serve.realsgii2.dev/u/Edison_BDE.scs</span>
+            </a>
+
+            <p style={{ marginTop: 16 }}>Then, download the Megapack:</p>
             <a href='https://serve.realsgii2.dev/u/RSG_Megapack.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
                 <span>RealSGII2 Megapack</span>
                 <span>https://serve.realsgii2.dev/u/RSG_Megapack.scs</span>
             </a>
 
-            <p style={{ marginTop: 16 }}>Move these into your mods folder:</p>
+            <p style={{ marginTop: 16 }}>Finally, move these into your mods folder:</p>
             <ul>
                 <li>On Windows: <code>%USERPROFILE%\Documents\American Truck Simulator\Mods</code></li>
                 <li>On Mac: <code>~/Library/Application Support/American Truck Simulator/mods</code></li>
@@ -62,6 +68,7 @@ export default function ConvoyDetails() {
                 <li>Equal Day / Night length</li>
                 <li>Advanced SCS Traffic (1.56 UPDATE)</li>
                 <li>Realistic AI traffic behavior</li>
+                <li>Edison BDE</li>
                 <li>Hermelinen Branding</li>
                 <li>IRL Trailer Skin Pack</li>
                 <li>Realistic Vehicle Lights Mod v7.4 (by Frkn64)</li>
