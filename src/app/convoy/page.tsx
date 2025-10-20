@@ -1,4 +1,14 @@
 import styles from './styles.module.scss'
+import type { Metadata, Viewport } from 'next';
+
+export const metadata: Metadata = {
+    title: "Hermelinen Convoy",
+    description: "Read up on how to download and sort the mods required to join Quantum Science's ATS convoy."
+}
+
+export const viewport: Viewport = {
+    themeColor: '#4b93fd'
+}
 
 export default function ConvoyDetails() {
     return <main className={styles.main}>
@@ -79,6 +89,16 @@ export default function ConvoyDetails() {
                 <li>Forward complains and suggestions (like mods) to <strong>@SGII2</strong> in QSP.</li>
                 <li>We have a thread in corp-random called <strong>Commercial Vehicle Fan Club</strong>, come join us!</li>
             </ul>
+
+            <p className={styles.copyright}>&copy; {new Date().getFullYear()} &mdash; Website built and server maintained by <a className={styles.alink}
+                href='https://realsgii2.dev/'
+                target={"_blank"}
+                rel={"noreferrer"}
+            >RealSGII2</a> &mdash; <a className={styles.alink}
+                href='https://github.com/RealSGII2/hermelinen-rickroll'
+                target={"_blank"}
+                rel={"noreferrer"}
+            >View website source</a></p>
         </article>
     </main>
 }
