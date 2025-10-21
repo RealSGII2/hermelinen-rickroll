@@ -131,3 +131,15 @@
 .alink {
   color: lighten(#4b93fd, 10%);
 }
+
+.realsgHeader {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(white, 0.64);
+  text-decoration: none;
+
+  &:hover {
+    color: lighten(#4b93fd, 10%);
+    text-decoration: underline;
+  }
+}

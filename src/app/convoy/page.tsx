@@ -13,6 +13,9 @@ export const viewport: Viewport = {
 export default function ConvoyDetails() {
     return <main className={styles.main}>
         <article>
+            <p>
+                <a href='https://realsgii2.dev' target={"_blank"} rel={"noreferrer"} className={styles.realsgHeader}>RealSGII2/</a>
+            </p>
             <h1>Hermelinen Convoy</h1>
 
             <div className={styles.infoRow}>
@@ -27,10 +30,9 @@ export default function ConvoyDetails() {
             </div>
 
             <div className={styles.infoCallout}>
-                <p><b>The current Megapack version is <code className={styles.megapackVersion}>3</code>. Changes are listed below.</b></p>
+                <p><b>The current Megapack version is <code className={styles.megapackVersion}>4</code>. Changes are listed below.</b></p>
                 <ul>
-                    <li>Change format to .scs to prevent users from easily unpacking the mod.</li>
-                    <li>Added Volvo VNL D13 engine noises so others can hear my engine.</li>
+                    <li>Fix a cache bug causing users to be unable to join the server.</li>
                 </ul>
             </div>
 
