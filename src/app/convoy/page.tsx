@@ -38,22 +38,33 @@ export default function ConvoyDetails() {
                 </ul>
             </div>
 
+            <div className={styles.infoCallout}>
+                <p><b>Heads up! New mods were added.</b></p>
+                <ul>
+                    <li>Two mods were added to the <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=3577280676' rel={"noreferrer"} target={"_blank"}>Workshop collection</a>.</li>
+                    <li>The <a href='https://serve.realsgii2.dev/u/dom379_156.scs' rel={"noreferrer"} target={"_blank"}>Dom 379</a> mod was added.</li>
+                    <li>Refer to the mod order list below to determine the location of these mods.</li>
+                </ul>
+            </div>
+
             <h2>Download Mods</h2>
             <p>First, subscribe to the steam collection:</p>
             <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=3577280676' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
-                <span>Latest Hermelinen Convoy Pack</span>
+                <span>Latest Hermelinen Convoy Pack <strong>(Updated)</strong></span>
                 <span>https://steamcommunity.com/sharedfiles/filedetails/?id=3577280676</span>
             </a>
 
-            <p style={{ marginTop: 16 }}>Next, download the Edison BDE:</p>
+            <p style={{ marginTop: 16 }}>Next, download the three non-workshop mods:</p>
             <a href='https://serve.realsgii2.dev/u/Edison_BDE.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
                 <span>Edison BDE</span>
                 <span>https://serve.realsgii2.dev/u/Edison_BDE.scs</span>
             </a>
-
-            <p style={{ marginTop: 16 }}>Then, download the Megapack:</p>
+            <a href='https://serve.realsgii2.dev/u/dom379_156.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+                <span>Dom 379 <strong>(New)</strong></span>
+                <span>https://serve.realsgii2.dev/u/dom379_156.scs</span>
+            </a>
             <a href='https://serve.realsgii2.dev/u/RSG_Megapack.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
-                <span>RealSGII2 Megapack</span>
+                <span>RealSGII2 Megapack <strong>(Updated)</strong></span>
                 <span>https://serve.realsgii2.dev/u/RSG_Megapack.scs</span>
             </a>
 
