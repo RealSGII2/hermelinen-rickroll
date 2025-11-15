@@ -30,9 +30,11 @@ export default function ConvoyDetails() {
             </div>
 
             <div className={styles.infoCallout}>
-                <p><b>The current Megapack version is <code className={styles.megapackVersion}>4</code>. Changes are listed below.</b></p>
+                <p><b>The current Megapack version is <code className={styles.megapackVersion}>5</code>. Changes are listed below.</b></p>
                 <ul>
-                    <li>Fix a cache bug causing users to be unable to join the server.</li>
+                    <li>Add custom mudflaps to dry box and chip van trailers.</li>
+                    <li>Add bull bars and chrome bumpers.</li>
+                    <li>Fix deacceleration on hills.</li>
                 </ul>
             </div>
 
@@ -71,6 +73,9 @@ export default function ConvoyDetails() {
                 <li>Advanced SCS Traffic (1.56 UPDATE)</li>
                 <li>Realistic AI traffic behavior</li>
                 <li>Edison BDE</li>
+                <li>[SCR] Peterbilt 351 <strong>(New)</strong></li>
+                <li>Kenworth K100E <strong>(New)</strong></li>
+                <li>Doms&apos; 379 1.56 <strong>(New)</strong></li>
                 <li>Hermelinen Branding</li>
                 <li>IRL Trailer Skin Pack</li>
                 <li>Realistic Vehicle Lights Mod v7.4 (by Frkn64)</li>
