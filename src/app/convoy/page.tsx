@@ -15,7 +15,7 @@ export default function ConvoyDetails() {
     return <main className={styles.main}>
         <article>
             <p>
-                <a href='https://realsgii2.dev' target={"_blank"} rel={"noreferrer"} className={styles.realsgHeader}>RealSGII2/</a>
+                <a href='https://realsgii2.dev' target={"_blank"} className={styles.realsgHeader}>RealSGII2/</a>
             </p>
             <h1>Hermelinen Convoy</h1>
 
@@ -52,15 +52,15 @@ export default function ConvoyDetails() {
             </a>
 
             <p style={{ marginTop: 16 }}>Next, download the three non-workshop mods:</p>
-            <a href='https://cdn.realsgii2.dev/ats/Edison_BDE.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+            <a href='https://cdn.realsgii2.dev/ats/Edison_BDE.scs' target={"_blank"} className={styles.modItem}>
                 <span>Edison BDE</span>
                 <span>https://cdn.realsgii2.dev/ats/Edison_BDE.scs</span>
             </a>
-            <a href='https://cdn.realsgii2.dev/ats/Dom379.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+            <a href='https://cdn.realsgii2.dev/ats/Dom379.scs' target={"_blank"} className={styles.modItem}>
                 <span>Dom 379</span>
                 <span>https://cdn.realsgii2.dev/ats/Dom379.scs</span>
             </a>
-            <a href='https://cdn.realsgii2.dev/ats/RSG_Megapack.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+            <a href='https://cdn.realsgii2.dev/ats/RSG_Megapack.scs' target={"_blank"} className={styles.modItem}>
                 <span>RealSGII2 Megapack</span>
                 <span>https://cdn.realsgii2.dev/ats/RSG_Megapack.scs</span>
             </a>

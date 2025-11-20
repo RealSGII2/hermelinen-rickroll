@@ -17,7 +17,7 @@ export default function UpdateGuide() {
                 <h2>Updated Mods</h2>
                 <p>Download these and replace the old ones in your mods folder.</p>
 
-                <a href='https://cdn.realsgii2.dev/ats/Dom379.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+                <a href='https://cdn.realsgii2.dev/ats/Dom379.scs' target={"_blank"} className={styles.modItem}>
                     <span>Dom 379</span>
                     <span>https://cdn.realsgii2.dev/ats/Dom379.scs</span>
                     <ul>
@@ -25,7 +25,7 @@ export default function UpdateGuide() {
                         <li>Merge with Dom lighting mod.</li>
                     </ul>
                 </a>
-                <a href='https://cdn.realsgii2.dev/ats/RSG_Megapack.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+                <a href='https://cdn.realsgii2.dev/ats/RSG_Megapack.scs' target={"_blank"} className={styles.modItem}>
                     <span>RealSGII2 Megapack</span>
                     <span>https://cdn.realsgii2.dev/ats/RSG_Megapack.scs</span>
                     <ul>
