@@ -62,6 +62,74 @@
   color: rgba(white, 0.4);
 }
 
+.updateGuide {
+  background-color: #181c20;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 16px;
+
+  &.shown > button > div {
+    background-color: #181c20 !important;
+    color: white;
+  }
+
+  > button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 16px 16px 24px;
+    cursor: pointer;
+
+    background-color: color-mix(in srgb, #181c20, #4b93fd 30%);
+    border: none;
+
+    font-size: 16px;
+
+    &:hover {
+      background-color: color-mix(in srgb, #181c20, #4b93fd 35%);
+
+      div {
+        background-color: color-mix(in srgb, #4b93fd, white 12%);
+      }
+    }
+
+    a {
+      color: white;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      font-size: 14px;
+      font-weight: 600;
+      color: black;
+      background-color: #4b93fd;
+      padding: 0 16px;
+      height: 36px;
+      border-radius: 99px;
+    }
+  }
+
+  > div {
+    padding: 24px;
+
+    .modItem {
+      border: none;
+      background-color: color-mix(in srgb, #181c20, white 6%);
+
+      &:hover {
+        background-color: color-mix(in srgb, #181c20, white 10%);
+      }
+    }
+
+    h2:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+}
+
 .infoCallout {
   padding: 16px;
   background-color: color-mix(in srgb, #181c20, #4b93fd 30%);
@@ -146,10 +214,14 @@
       font-weight: 500;
     }
 
-    &:last-child {
+    &:nth-child(2) {
       font-size: 14px;
       color: rgba(white, 0.64);
     }
+  }
+
+  ul {
+    color: rgba(white, 0.64);
   }
 }
 

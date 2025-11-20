@@ -1,5 +1,6 @@
 import styles from './styles.module.scss'
 import type { Metadata, Viewport } from 'next';
+import UpdateGuide from '@/app/convoy/updateGuide';
 
 export const metadata: Metadata = {
     title: "Hermelinen Convoy",
@@ -29,17 +30,18 @@ export default function ConvoyDetails() {
                 </div>
             </div>
 
-            <div className={styles.infoCallout}>
-                <p><b>The current Megapack version is <code className={styles.megapackVersion}>6</code>. Changes are listed below.</b></p>
-                <ul>
-                    <li>Fix weird mudflaps.</li>
-                    <li>Remove unwanted physics mod.</li>
-                </ul>
-            </div>
+            <UpdateGuide />
+
+            <h2>Notices</h2>
 
             <div className={styles.errorCallout}>
-                <p><b>Heads up! An optional mod is currently broken.</b></p>
+                <p><b>An optional mod is currently broken.</b></p>
                 <p>The <strong>Better Raindrops</strong> mod will crash your game. The mod author is aware and working on an update.</p>
+            </div>
+
+            <div className={styles.infoCallout}>
+                <p><b>Download links have changed.</b></p>
+                <p>The files have been moved to a new server and downloads should be significantly faster.</p>
             </div>
 
             <h2>Download Mods</h2>
@@ -50,17 +52,17 @@ export default function ConvoyDetails() {
             </a>
 
             <p style={{ marginTop: 16 }}>Next, download the three non-workshop mods:</p>
-            <a href='https://serve.realsgii2.dev/u/Edison_BDE.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+            <a href='https://cdn.realsgii2.dev/ats/Edison_BDE.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
                 <span>Edison BDE</span>
-                <span>https://serve.realsgii2.dev/u/Edison_BDE.scs</span>
+                <span>https://cdn.realsgii2.dev/ats/Edison_BDE.scs</span>
             </a>
-            <a href='https://serve.realsgii2.dev/u/Dom379.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
-                <span>Dom 379 <strong>(Updated)</strong></span>
-                <span>https://serve.realsgii2.dev/u/Dom379.scs</span>
+            <a href='https://cdn.realsgii2.dev/ats/Dom379.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+                <span>Dom 379</span>
+                <span>https://cdn.realsgii2.dev/ats/Dom379.scs</span>
             </a>
-            <a href='https://serve.realsgii2.dev/u/RSG_Megapack.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
-                <span>RealSGII2 Megapack <strong>(Updated)</strong></span>
-                <span>https://serve.realsgii2.dev/u/RSG_Megapack.scs</span>
+            <a href='https://cdn.realsgii2.dev/ats/RSG_Megapack.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+                <span>RealSGII2 Megapack</span>
+                <span>https://cdn.realsgii2.dev/ats/RSG_Megapack.scs</span>
             </a>
 
             <p style={{ marginTop: 16 }}>Finally, move these into your mods folder:</p>
@@ -81,7 +83,7 @@ export default function ConvoyDetails() {
                 <li>Edison BDE</li>
                 <li>[SCR] Peterbilt 351</li>
                 <li>Kenworth K100E</li>
-                <li>Doms&apos; 379 <strong>(Updated)</strong></li>
+                <li>Doms&apos; 379</li>
                 <li>Hermelinen Branding</li>
                 <li>IRL Trailer Skin Pack</li>
                 <li>Realistic Vehicle Lights Mod v7.4 (by Frkn64)</li>
