@@ -30,27 +30,22 @@ export default function ConvoyDetails() {
             </div>
 
             <div className={styles.infoCallout}>
-                <p><b>The current Megapack version is <code className={styles.megapackVersion}>5</code>. Changes are listed below.</b></p>
+                <p><b>The current Megapack version is <code className={styles.megapackVersion}>6</code>. Changes are listed below.</b></p>
                 <ul>
-                    <li>Add custom mudflaps to dry box and chip van trailers.</li>
-                    <li>Add bull bars and chrome bumpers.</li>
-                    <li>Fix deacceleration on hills.</li>
+                    <li>Fix weird mudflaps.</li>
+                    <li>Remove unwanted physics mod.</li>
                 </ul>
             </div>
 
-            <div className={styles.infoCallout}>
-                <p><b>Heads up! New mods were added.</b></p>
-                <ul>
-                    <li>Two mods were added to the <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=3577280676' rel={"noreferrer"} target={"_blank"}>Workshop collection</a>.</li>
-                    <li>The <a href='https://serve.realsgii2.dev/u/dom379_156.scs' rel={"noreferrer"} target={"_blank"}>Dom 379</a> mod was added.</li>
-                    <li>Refer to the mod order list below to determine the location of these mods.</li>
-                </ul>
+            <div className={styles.errorCallout}>
+                <p><b>Heads up! An optional mod is currently broken.</b></p>
+                <p>The <strong>Better Raindrops</strong> mod will crash your game. The mod author is aware and working on an update.</p>
             </div>
 
             <h2>Download Mods</h2>
             <p>First, subscribe to the steam collection:</p>
             <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=3577280676' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
-                <span>Latest Hermelinen Convoy Pack <strong>(Updated)</strong></span>
+                <span>Latest Hermelinen Convoy Pack</span>
                 <span>https://steamcommunity.com/sharedfiles/filedetails/?id=3577280676</span>
             </a>
 
@@ -59,9 +54,9 @@ export default function ConvoyDetails() {
                 <span>Edison BDE</span>
                 <span>https://serve.realsgii2.dev/u/Edison_BDE.scs</span>
             </a>
-            <a href='https://serve.realsgii2.dev/u/dom379_156.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
-                <span>Dom 379 <strong>(New)</strong></span>
-                <span>https://serve.realsgii2.dev/u/dom379_156.scs</span>
+            <a href='https://serve.realsgii2.dev/u/Dom379.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
+                <span>Dom 379 <strong>(Updated)</strong></span>
+                <span>https://serve.realsgii2.dev/u/Dom379.scs</span>
             </a>
             <a href='https://serve.realsgii2.dev/u/RSG_Megapack.scs' rel={"noreferrer"} target={"_blank"} className={styles.modItem}>
                 <span>RealSGII2 Megapack <strong>(Updated)</strong></span>
@@ -84,9 +79,9 @@ export default function ConvoyDetails() {
                 <li>Advanced SCS Traffic (1.56 UPDATE)</li>
                 <li>Realistic AI traffic behavior</li>
                 <li>Edison BDE</li>
-                <li>[SCR] Peterbilt 351 <strong>(New)</strong></li>
-                <li>Kenworth K100E <strong>(New)</strong></li>
-                <li>Doms&apos; 379 1.56 <strong>(New)</strong></li>
+                <li>[SCR] Peterbilt 351</li>
+                <li>Kenworth K100E</li>
+                <li>Doms&apos; 379 <strong>(Updated)</strong></li>
                 <li>Hermelinen Branding</li>
                 <li>IRL Trailer Skin Pack</li>
                 <li>Realistic Vehicle Lights Mod v7.4 (by Frkn64)</li>

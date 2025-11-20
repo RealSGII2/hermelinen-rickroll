@@ -1,0 +1,152 @@
+.main {
+  body:has(&) {
+    background-color: white;
+    color: #252732;
+  }
+
+  width: calc(800px + 64px * 2);
+  margin: 0 auto;
+  padding: 64px;
+
+  label {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 4px;
+
+    display: block;
+  }
+
+  input {
+    min-width: 320px;
+    height: 36px;
+    padding: 0 12px;
+    margin-bottom: 12px;
+
+    background-color: color-mix(in srgb, #252732, white 90%);
+    border: none;
+    border-radius: 6px;
+
+    transition: background-color 100ms;
+
+    &:hover {
+      background-color: color-mix(in srgb, #252732, white 92.5%);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 0 2px #ff9001;
+    }
+  }
+}
+
+.logo {
+  color: #ff9001;
+
+  + h1 {
+    font-size: 40px;
+    margin-top: 8px;
+
+    + p {
+      font-size: 18px;
+      margin: 24px 0;
+    }
+  }
+}
+
+.jobCard {
+  padding: 24px;
+  border: solid 1px color-mix(in srgb, #252732 20%, white);
+  border-radius: 8px;
+  margin-top: 16px;
+
+  ul {
+    margin-bottom: 24px;
+    list-style-position: inside;
+  }
+}
+
+.button {
+  display: flex;
+  width: fit-content;
+
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 0 16px;
+  min-width: 92px;
+  height: 40px;
+
+  background-color: #ff9001;
+  border: none;
+  border-radius: 6px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: background-color 100ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: color-mix(in srgb, #ff9001, black 4%);
+  }
+
+  &:active {
+    background-color: color-mix(in srgb, #ff9001, black 8%);
+    transition-duration: 0ms;
+  }
+
+  &:focus {
+    outline: solid 2px rgba(#ff9001, 0.6);
+    outline-offset: 2px;
+  }
+}
+
+.radioButton {
+  height: 36px;
+  padding: 0 16px 0 8px;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+
+  margin-bottom: 16px;
+
+  background-color: transparent;
+  border: solid 1px transparent;
+  border-radius: 6px;
+
+  transition: 100ms ease;
+  transition-property: background-color, border-color;
+
+  div {
+    width: 20px;
+    height: 20px;
+
+    background-color: white;
+    border-radius: 99px;
+    border: solid 1px color-mix(in srgb, #252732 20%, white);
+
+    transition: border 100ms;
+  }
+
+  &:has(+ .radioButton) {
+    margin-bottom: 2px;
+  }
+
+  &:hover {
+    background-color: color-mix(in srgb, #252732 5%, white);
+    //border: solid 1px color-mix(in srgb, #252732 20%, white);
+  }
+
+  &:focus {
+    background-color: color-mix(in srgb, #ff9001 20%, white);
+
+    div {
+      border: solid 4px #ff9001;
+    }
+  }
+}
